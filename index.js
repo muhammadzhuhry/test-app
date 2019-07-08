@@ -6,4 +6,6 @@ const app = http.createServer(function(req, res) {
   res.end('{ "success":true, "data":"Index", "message":"Hello World", "code":200}');
 });
 
-app.listen(port);
+app.listen(port, () => {
+  console.log(`Server running properly on port : ${port}`)
+});
